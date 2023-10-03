@@ -5,6 +5,8 @@ public class es3 {
         String chiusura = ":q";
         Scanner input = new Scanner(System.in);
         String stringa = "inizio";
+        String v = ", ";
+        String risultato = "";
 
         while (stringa.equals(chiusura) != true) {
 
@@ -15,9 +17,10 @@ public class es3 {
             String[] arrayStringa = stringa.split("");
 
             for (int i = 0; i < arrayStringa.length; i++){
-                System.out.println(arrayStringa[i]);
+                risultato = risultato + arrayStringa[i] + v;
 
             }
+            System.out.println(risultato);
             System.out.println(" ");
 
         }
