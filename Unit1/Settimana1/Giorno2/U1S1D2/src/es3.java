@@ -22,8 +22,10 @@ public class es3 {
             }
             System.out.println(risultato);
             System.out.println(" ");
+            risultato = "";
 
         }
+
         input.close();
     }
 }
