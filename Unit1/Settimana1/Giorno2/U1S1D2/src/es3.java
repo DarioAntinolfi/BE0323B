@@ -6,9 +6,11 @@ public class es3 {
         Scanner input = new Scanner(System.in);
         String stringa = "inizio";
 
-        while (stringa != chiusura) {
+        while (stringa.equals(chiusura) != true) {
 
+            System.out.println("Inserisci una parola");
             stringa = input.nextLine();
+            System.out.println(" ");
 
             String[] arrayStringa = stringa.split("");
 
@@ -16,6 +18,7 @@ public class es3 {
                 System.out.println(arrayStringa[i]);
 
             }
+            System.out.println(" ");
 
         }
         input.close();

@@ -1,26 +1,35 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
         /*-1-*/
 
-        String parola = "Ciao";
+        System.out.println("Inserisci una parola");
+        String parola = input.nextLine();
         int lunghezza = parola.length();
         if (lunghezza % 2 == 0){
-            System.out.println("pari");
+            System.out.println("Pari");
         } else {
-            System.out.println("dispari");
+            System.out.println("Dispari");
         }
 
+        System.out.println(" ");
         /*-2-*/
 
-        int anno = 2023;
+        System.out.println("Inserisci un intero");
+        int anno = input.nextInt();
         if (anno % 4 == 0) {
             if ((anno % 100 == 0) != (anno % 400 == 0)) {
-                System.out.println("bisestile");
+                System.out.println("Bisestile");
             }
-            System.out.println("non bisestile");
+            System.out.println("Non bisestile");
         } else {
-            System.out.println("non bisestile");
+            System.out.println("Non bisestile");
         }
+
+        input.close();
 
     }
 }
