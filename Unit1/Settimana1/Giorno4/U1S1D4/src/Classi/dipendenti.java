@@ -1,13 +1,13 @@
 package Classi;
 
 public class dipendenti {
-    enum LivelloEnum {
+    public enum LivelloEnum {
         OPERAIO,
         IMPIEGATO,
         QUADRO,
         DIRIGENTE
     }
-    enum DipartimentoEnum {
+    public enum DipartimentoEnum {
         PRODUZIONE,
         AMMINISTRAZIONE,
         VENDITE
