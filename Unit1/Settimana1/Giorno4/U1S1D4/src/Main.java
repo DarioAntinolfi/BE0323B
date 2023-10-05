@@ -1,14 +1,16 @@
-import Classi.dipendenti;
+import Classi.Dipartimento;
+import Classi.Dipendente;
+import Classi.Livello;
 
 public class Main {
     public static void main(String[] args) {
-       dipendenti Carlo = new dipendenti (1, dipendenti.DipartimentoEnum.PRODUZIONE);
+       Dipendente Carlo = new Dipendente (1, Dipartimento.PRODUZIONE);
        Carlo.stampaDati();
 
-       dipendenti Luca = new dipendenti (2, dipendenti.DipartimentoEnum.AMMINISTRAZIONE);
+        Dipendente Luca = new Dipendente (2, Dipartimento.AMMINISTRAZIONE);
        Luca.stampaDati();
 
-       dipendenti Giacomo = new dipendenti (3, 350,40, dipendenti.LivelloEnum.IMPIEGATO, dipendenti.DipartimentoEnum.VENDITE);
+        Dipendente Giacomo = new Dipendente (3, 350,40, Livello.IMPIEGATO, Dipartimento.VENDITE);
        Giacomo.stampaDati();
 
        Carlo.promozione();
