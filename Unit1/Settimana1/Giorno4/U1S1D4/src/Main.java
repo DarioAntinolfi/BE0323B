@@ -2,12 +2,17 @@ import Classi.dipendenti;
 
 public class Main {
     public static void main(String[] args) {
-       dipendenti Carlo = new dipendenti ("PRODUZIONE");
+       dipendenti Carlo = new dipendenti (1,"PRODUZIONE");
+       Carlo.stampaDati();
 
-        System.out.println("Matricola " + Carlo.getMatricola());
-        System.out.println("Stipendio " + Carlo.getStipendio());
-        System.out.println("Straordinario " + Carlo.getImportoOrarioStraordinario());
-        System.out.println("Livello " + Carlo.getLivello());
-        System.out.println("Dipartimento " + Carlo.getDipartimento());
+       dipendenti Luca = new dipendenti (2,"AMMINISTRAZIONE");
+       Luca.stampaDati();
+
+       dipendenti Giacomo = new dipendenti (3, 350,40, "IMPIEGATO", "VENDITE");
+       Giacomo.stampaDati();
+
+       Carlo.promozione();
+       Carlo.stampaDati();
+
     }
 }
