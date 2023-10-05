@@ -1,13 +1,13 @@
 package Classi;
 
 public class dipendenti {
-    enum Livello {
+    enum LivelloEnum {
         OPERAIO,
         IMPIEGATO,
         QUADRO,
         DIRIGENTE
     }
-    enum Dipartimento {
+    enum DipartimentoEnum {
         PRODUZIONE,
         AMMINISTRAZIONE,
         VENDITE
@@ -16,8 +16,8 @@ public class dipendenti {
     protected int Matricola;
     protected double stipendio;
     public double importoOrarioStraordinario;
-    protected String Livello;
-    public String Dipartimento;
+    protected LivelloEnum Livello;
+    public DipartimentoEnum Dipartimento;
 
     public double getStipendioBase() {
         return stipendioBase;
@@ -35,11 +35,11 @@ public class dipendenti {
         return importoOrarioStraordinario;
     }
 
-    public String getLivello() {
+    public LivelloEnum getLivello() {
         return Livello;
     }
 
-    public String getDipartimento() {
+    public DipartimentoEnum getDipartimento() {
         return Dipartimento;
     }
 
@@ -57,19 +57,19 @@ public class dipendenti {
         System.out.println(" ");
     }
 
-    public void setDipartimento(String dipartimento) {
+    public void setDipartimento(DipartimentoEnum dipartimento) {
         Dipartimento = dipartimento;
     }
 
-    public dipendenti(int indiceMatricola, String DipartimentoAssociato) {
+    public dipendenti(int indiceMatricola, DipartimentoEnum DipartimentoAssociato) {
         this.Matricola = indiceMatricola;
         this.stipendio = stipendioBase;
         this.importoOrarioStraordinario = 30;
-        this.Livello = "OPERAIO";
+        this.Livello = LivelloEnum.OPERAIO;
         this.Dipartimento = DipartimentoAssociato;
     }
 
-    public dipendenti(int indiceMatricola,double stipendio, double importoOrarioStraordinario, String Livello,  String DipartimentoAssociato) {
+    public dipendenti(int indiceMatricola,double stipendio, double importoOrarioStraordinario, LivelloEnum Livello,  DipartimentoEnum DipartimentoAssociato) {
         this.Matricola = indiceMatricola;
         this.stipendio = stipendio;
         this.importoOrarioStraordinario = importoOrarioStraordinario;
@@ -79,22 +79,22 @@ public class dipendenti {
 
     public void promozione() {
         switch (this.Livello) {
-            case "DIRIGENTE": {
+            case DIRIGENTE: {
                 System.out.println("ERRORE");
                 break;
             }
-            case "QUADRO": {
-                this.Livello = "DIRIGENTE";
+            case QUADRO: {
+                this.Livello = LivelloEnum.DIRIGENTE;
                 System.out.println("Ora sei dirigente");
                 break;
             }
-            case "IMPIEGATO": {
-                this.Livello = "QUADRO";
+            case IMPIEGATO: {
+                this.Livello = LivelloEnum.QUADRO;
                 System.out.println("Ora sei quadro");
                 break;
             }
-            case "OPERAIO": {
-                this.Livello = "IMPIEGATO";
+            case OPERAIO: {
+                this.Livello = LivelloEnum.IMPIEGATO;
                 System.out.println("Ora sei impiegato");
                 break;
             }
@@ -107,20 +107,20 @@ public class dipendenti {
     }
     public void aggiornaStipendio(){
         switch (this.Livello) {
-            case "DIRIGENTE": {
+            case DIRIGENTE: {
                 this.stipendio = stipendioBase * 2;
                 break;
 
             }
-            case "QUADRO": {
+            case QUADRO: {
                 this.stipendio = stipendioBase * 1.5;
                 break;
             }
-            case "IMPIEGATO": {
+            case IMPIEGATO: {
                 this.stipendio = stipendioBase * 1.2;
                 break;
             }
-            case "OPERAIO": {
+            case OPERAIO: {
                 this.stipendio = stipendioBase * 1;
                 break;
             }
