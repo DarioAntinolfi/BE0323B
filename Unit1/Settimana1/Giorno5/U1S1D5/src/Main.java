@@ -9,36 +9,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /*-elemento multimediale-*/
-        /*
-        ElementoMultimediale Gioconda = new ElementoMultimediale("Gioconda", 0 );
-        Gioconda.play();
-        */
-
-        /*-audio-*/
-        /*
-        Audio Voce = new Audio("sale", 5);
-        Voce.play();
-        Voce.abbassaVolume();
-        Voce.mostraVolume();
-         */
-
-        /*-video-*/
-        /*
-        Video Cartoni = new Video("dragonball", 9);
-        Cartoni.play();
-        Cartoni.abbassaVolume();
-        Cartoni.mostraVolume();
-        Cartoni.mostraLuminosità();
-         */
-
-        /*-immagini-*/
-        /*
-        Immagine Foto = new Immagine("mare");
-        Foto.alzaLuminosità();
-        Foto.mostraLuminosità();
-        Foto.play();
-        */
 
         /*-Array-*/
         TipoElemento Elemento;
@@ -47,6 +17,13 @@ public class Main {
         String nome = "";
         int durata = 0;
         ElementoMultimediale[] cronologia = new ElementoMultimediale[5];
+        for (int i = 0; i < 5; i++){
+            cronologia[4] = cronologia[3];
+            cronologia[3] = cronologia[2];
+            cronologia[2] = cronologia[1];
+            cronologia[1] = cronologia[0];
+            cronologia[0] = ;
+        }
 
         Scanner input = new Scanner(System.in);
         System.out.println("Inserisci un tipo di Elemento");
