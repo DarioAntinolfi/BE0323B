@@ -7,7 +7,7 @@ public class Audio extends ElementoMultimediale{
 
     }
     int volume = 5;
-    String volumeStampa = "";
+    String volumeStampa = "Volume ";
     public void mostraVolume(){
         for (int i = 0; i < volume; i++){
             volumeStampa += "!";
