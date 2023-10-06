@@ -18,11 +18,18 @@ public class Main {
         Voce.mostraVolume();
          */
 
+        /*-video-*/
+        /*
         Video Cartoni = new Video("dragonball", 9);
         Cartoni.play();
         Cartoni.abbassaVolume();
         Cartoni.mostraVolume();
         Cartoni.mostraLuminosità();
-        
+         */
+
+        /*-immagini-*/
+
+
+
     }
 }
