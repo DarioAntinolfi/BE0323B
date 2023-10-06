@@ -6,6 +6,7 @@ public class Audio extends ElementoMultimediale{
         super(titoloCostruttore, riproducibileCostruttore);
 
     }
+    protected boolean riproduzione = true;
     int volume = 5;
     String volumeStampa = "Volume ";
     public void mostraVolume(){

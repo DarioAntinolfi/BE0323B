@@ -5,6 +5,7 @@ public class Video extends ElementoMultimediale{
         super(titoloCostruttore, riproducibileCostruttore);
 
     }
+    protected boolean riproduzione = true;
     int volume = 5;
     String volumeStampa = "Volume ";
     int luminosità = 5;
