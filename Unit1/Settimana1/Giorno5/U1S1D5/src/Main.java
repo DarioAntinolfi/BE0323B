@@ -9,6 +9,8 @@ public class Main {
 
         Audio Voce = new Audio("sale", 5);
         Voce.play();
+        Voce.abbassaVolume();
+        Voce.mostraVolume();
 
     }
 }
