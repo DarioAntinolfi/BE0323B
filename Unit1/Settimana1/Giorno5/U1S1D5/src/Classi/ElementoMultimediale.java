@@ -2,7 +2,7 @@ package Classi;
 
 public class ElementoMultimediale {
     protected String titolo = "";
-    protected int riproducibile = 0;
+    protected int riproducibile;
 
     public ElementoMultimediale(String titoloCostruttore, int riproducibileCostruttore) {
         this.titolo = titoloCostruttore;

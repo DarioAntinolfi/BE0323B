@@ -1,3 +1,4 @@
+import Classi.Audio;
 import Classi.ElementoMultimediale;
 
 public class Main {
@@ -5,6 +6,9 @@ public class Main {
 
         ElementoMultimediale Gioconda = new ElementoMultimediale("Gioconda", 0 );
         Gioconda.play();
+
+        Audio Voce = new Audio("sale", 5);
+        Voce.play();
 
     }
 }
