@@ -33,11 +33,6 @@ public class Main {
             System.out.println("Inserisci un durata contenuto");
             durata = input.nextInt();
 
-            cronologia[4] = cronologia[3];
-            cronologia[3] = cronologia[2];
-            cronologia[2] = cronologia[1];
-            cronologia[1] = cronologia[0];
-
             switch (Elemento) {
                 case Audio: {
                     Audio nomea = new Audio(nome, durata);
