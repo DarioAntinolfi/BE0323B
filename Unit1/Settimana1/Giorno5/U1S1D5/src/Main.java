@@ -1,7 +1,10 @@
+import Classi.ElementoMultimediale;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.printf("Hello and welcome!");
+        ElementoMultimediale Gioconda = new ElementoMultimediale("Gioconda", 0 );
+        Gioconda.play();
 
     }
 }
