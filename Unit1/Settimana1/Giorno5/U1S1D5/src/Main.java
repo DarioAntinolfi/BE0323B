@@ -1,5 +1,6 @@
 import Classi.Audio;
 import Classi.ElementoMultimediale;
+import Classi.Immagine;
 import Classi.Video;
 
 public class Main {
@@ -28,8 +29,14 @@ public class Main {
          */
 
         /*-immagini-*/
+        /*
+        Immagine Foto = new Immagine("mare");
+        Foto.alzaLuminosità();
+        Foto.mostraLuminosità();
+        Foto.play();
+        */
 
-
-
+        /*-Array-*/
+        
     }
 }

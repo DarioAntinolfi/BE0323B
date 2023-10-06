@@ -1,12 +1,15 @@
 package Classi;
 
-public class ElementoMultimediale {
+public abstract class ElementoMultimediale {
     protected String titolo = "";
     protected int riproducibile;
 
     public ElementoMultimediale(String titoloCostruttore, int riproducibileCostruttore) {
         this.titolo = titoloCostruttore;
         this.riproducibile = riproducibileCostruttore;
+    }
+    public ElementoMultimediale(String titoloCostruttore) {
+        this.titolo = titoloCostruttore;
     }
 
     public void play(){
