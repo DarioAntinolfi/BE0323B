@@ -20,18 +20,18 @@ public class Main {
         String[] nomi = {"uno", "due", "tre", "quattro","cinque"};
         Scanner input = new Scanner(System.in);
         Audio prova =new Audio("cane", 2);
-        //for(int i = 0; i < 5; i++) {
+        for(int i = 0; i < 5; i++) {
 
             System.out.println("Inserisci un tipo di Elemento");
             conversione = input.nextLine();
             Elemento = TipoElemento.valueOf(conversione); // blocco del programma se si va in loop
             System.out.println("Inserisci un tipo contenuto");
             tipo = input.nextLine();
-            //nomi[i] = tipo;
+            nomi[i] = tipo;
             System.out.println("Inserisci un nome contenuto");
             nome = input.nextLine();
             System.out.println("Inserisci un durata contenuto");
-            durata = input.nextInt();
+            durata = Integer.parseInt(input.nextLine());
 
             switch (Elemento) {
                 case Audio: {
@@ -56,18 +56,18 @@ public class Main {
                 }
                 case Immagine: {
                     System.out.println("non poi creare immagini");
-                    //i--;
+                    i--;
                     break;
                 }
                 default: {
                     System.out.println("scelta non valida");
-                    //i--;
+                    i--;
                     break;
                 }
 
             }
 
-        //}
+        }
         System.out.println("Scegli cosa far eseguire (1 a 5)");
         int cursore = input.nextInt() - 1;
 
