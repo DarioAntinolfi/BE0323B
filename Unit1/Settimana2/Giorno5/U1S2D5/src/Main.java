@@ -1,17 +1,21 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import Classi.Libri;
+import Classi.Riviste;
+
+import static Classi.periodicità.mensile;
+import static Classi.periodicità.settimanale;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Invio with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
-        // Press Maiusc+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        /*-Archivio di base-*/
+        Libri libro1 = new Libri(1, "Aldo", 1995, 300, "Aldo Baglio", "Biografia");
+        Libri libro2 = new Libri(2, "Giovanni", 1998, 350, "Aldo Baglio", "Commedia");
+        Libri libro3 = new Libri(3, "Giacomo", 1992, 120, "Aldo Baglio", "Fantasy");
+        Riviste rivista1 = new Riviste(4, "Gossip Oggi", 2022, 50, settimanale);
+        Riviste rivista2 = new Riviste(5, "Chi l'ha visto?", 2006, 48, mensile);
 
-            // Press Maiusc+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
+
     }
 }
