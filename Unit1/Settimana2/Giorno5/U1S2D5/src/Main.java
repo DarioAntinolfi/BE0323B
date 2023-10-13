@@ -47,5 +47,32 @@ public class Main {
 
         }
 
+        /*-Aggiunta di riviste-*/
+
+        boolean aggiungereRivista = true;
+        while (aggiungereRivista == true) {
+            System.out.println("Vuoi aggiungere un libro?");
+            String risposta = input.nextLine();
+            if (Objects.equals(risposta, si)){
+                System.out.println("Inserire un titolo");
+                String newTitolo = input.nextLine();
+                System.out.println("Inserire anno di publicazione");
+                int newAnnoDiPublicazione = Integer.parseInt(input.nextLine());
+                System.out.println("Inserire numero di pagine");
+                int newNumeroDiPagine = Integer.parseInt(input.nextLine());
+                System.out.println("Inserire periodicità");
+                Enum newPeriodicità = mensile;
+                Riviste newRivista = new Riviste(indice, newTitolo, newAnnoDiPublicazione, newNumeroDiPagine, newPeriodicità);
+                indice++;
+
+            } else{
+                aggiungereRivista = false;
+            }
+
+        }
+
+        /*-Rimozione-*/
+        boolean rimuovere
+
     }
 }
