@@ -2,7 +2,7 @@ package Classi;
 
 public class Catalogo {
 
-    int codiceISBN;
+    public int codiceISBN;
     String titolo;
     int annoDiPubblicazione;
     int numeroPagine;
@@ -13,4 +13,21 @@ public class Catalogo {
         this.annoDiPubblicazione = annoDiPubblicazione;
         this.numeroPagine = numeroPagine;
     }
+
+    public String getTitolo() {
+        return titolo;
+    }
+
+    public int getCodiceISBN() {
+        return codiceISBN;
+    }
+
+    public int getAnnoDiPubblicazione() {
+        return annoDiPubblicazione;
+    }
+
+    public int getNumeroPagine() {
+        return numeroPagine;
+    }
 }
+
