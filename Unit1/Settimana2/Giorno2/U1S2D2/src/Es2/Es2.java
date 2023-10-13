@@ -31,7 +31,21 @@ public class Es2 {
         ArrayList<String> paroleInverse = new ArrayList<>();
         for (int i = 0; i < numeroParole; i++){
             paroleInverse.add(parole.get(numeroParole - 1 - i));
-            System.out.println(parole.get(numeroParole - 1 - i));
+        }
+        for (String s : paroleInverse) {
+            System.out.println(s);
+        }
+
+        System.out.println("pari/dispari");
+        boolean controllo = true;
+        if (controllo != true){
+            for(int i = 0; i < parole.size(); i+=2){
+                System.out.println(parole.get(1));
+            }
+        } else {
+            for(int i = 1; i< parole.size(); i +=2){
+                System.out.println(parole.get(i));
+            }
         }
 
         input.close();
