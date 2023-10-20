@@ -23,5 +23,14 @@ public class EventoDAO {
         return em.find(Evento.class, id);
     }
 
+    public void findByIdAndDelete(long id) {
+        Evento found = em.find(Evento.class, id);
+        EntityTransaction transaction = em.getTransaction();
+        transaction.begin();
+        em.remove(found);
+        transaction.commit();
+        System.out.println("Cancellazione effettuata");
+    }
+
 
 }
