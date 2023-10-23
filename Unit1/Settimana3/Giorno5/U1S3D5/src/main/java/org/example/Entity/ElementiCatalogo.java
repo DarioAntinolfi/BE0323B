@@ -14,10 +14,10 @@ public class ElementiCatalogo {
     @GeneratedValue
     protected long codiceISBN;
     protected String titolo;
-    protected Date annoProduzione;
+    protected int annoProduzione;
     protected int numeroPagine;
 
-    public ElementiCatalogo(String titolo, Date annoProduzione, int numeroPagine) {
+    public ElementiCatalogo(String titolo, int annoProduzione, int numeroPagine) {
         this.titolo = titolo;
         this.annoProduzione = annoProduzione;
         this.numeroPagine = numeroPagine;
@@ -31,11 +31,11 @@ public class ElementiCatalogo {
         this.titolo = titolo;
     }
 
-    public Date getAnnoProduzione() {
+    public int getAnnoProduzione() {
         return annoProduzione;
     }
 
-    public void setAnnoProduzione(Date annoProduzione) {
+    public void setAnnoProduzione(int annoProduzione) {
         this.annoProduzione = annoProduzione;
     }
 

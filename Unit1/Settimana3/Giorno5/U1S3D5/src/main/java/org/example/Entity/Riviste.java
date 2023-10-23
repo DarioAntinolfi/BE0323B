@@ -3,7 +3,7 @@ package org.example.Entity;
 import java.util.Date;
 
 public class Riviste extends ElementiCatalogo{
-    public Riviste(String titolo, Date annoProduzione, int numeroPagine, Enum periodicità) {
+    public Riviste(String titolo, int annoProduzione, int numeroPagine, Enum periodicità) {
         super(titolo, annoProduzione, numeroPagine);
         this.periodicità = periodicità;
     }

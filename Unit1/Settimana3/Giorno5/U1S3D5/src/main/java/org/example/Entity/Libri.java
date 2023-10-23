@@ -1,9 +1,7 @@
 package org.example.Entity;
 
-import java.util.Date;
-
 public class Libri extends ElementiCatalogo{
-    public Libri(String titolo, Date annoProduzione, int numeroPagine, String autore, String genere) {
+    public Libri(String titolo, int annoProduzione, int numeroPagine, String autore, String genere) {
         super(titolo, annoProduzione, numeroPagine);
         this.autore = autore;
         this.genere = genere;
